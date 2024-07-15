@@ -13,16 +13,17 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Setup .NET Core
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: '5.0.x'  # Укажите вашу версию .NET
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1.0.2
+
+    - name: Setup .NET Framework 4.7.2
+      run: choco install netfx-4.7.2-devpack
 
     - name: Build project
-      run: dotnet build --configuration Release
+      run: msbuild MaksimaSDnuhoyTebya/MaksimaSDnuhoyTebya/MaksimaSDnuhoyTebya.csproj /p:Configuration=Release
 
     - name: Publish project
-      run: dotnet publish --configuration Release --output ./docs
+      run: msbuild MaksimaSDnuhoyTebya/MaksimaSDnuhoyTebya/MaksimaSDnuhoyTebya.csproj /p:Configuration=Release /p:OutputPath=./docs
 
     - name: Commit and push changes
       run: |
