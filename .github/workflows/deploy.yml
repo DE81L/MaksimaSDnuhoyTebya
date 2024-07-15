@@ -32,7 +32,7 @@ jobs:
         git add -f MaksimaSDnuhoyTebya/docs/*
         git add -f MaksimaSDnuhoyTebya/docsapp.publish/*
         git commit -m "Update docs"
-        git push https://github.com/DE81L/MaksimaSDnuhoyTebya.git HEAD:master
+        git push https://x-access-token:${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/DE81L/MaksimaSDnuhoyTebya.git HEAD:master
       env:
         GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
