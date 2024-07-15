@@ -1,0 +1,42 @@
+name: Deploy ClickOnce
+
+on:
+  push:
+    branches:
+      - master  # или ваша основная ветка
+
+jobs:
+  deploy:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '4.7.2'  # Укажите вашу версию .NET
+
+    - name: Build project
+      run: dotnet build --configuration Release
+
+    - name: Publish project
+      run: dotnet publish --configuration Release --output ./docs
+
+    - name: Commit and push changes
+      run: |
+        git config --local user.name "github-actions[bot]"
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git add docs/*
+        git commit -m "Update docs"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs
+        publish_branch: master  # Укажите правильную ветку для публикации

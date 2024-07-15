@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="MaksimaSDnuhoyTebya.exe" version="1.0.0.7" publicKeyToken="367d27ff3147bb33" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="MaksimaSDnuhoyTebya" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="MaksimaSDnuhoyTebya.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Параметры манифеста UAC
+          Если нужно изменить уровень контроля учетных записей Windows, замените 
+          узел requestedExecutionLevel одним из следующих значений.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+        Если нужно использовать виртуализацию файлов и реестра для обратной
+             совместимости, удалите узел requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MaksimaSDnuhoyTebya.exe" size="9128">
+      <assemblyIdentity name="MaksimaSDnuhoyTebya" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>2BTtV+0UPGY5pIbWubDM/3/vX2J0v9XP3r/AJgCi87A=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="MaksimaSDnuhoyTebya.exe.config" size="539">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>UA2XgE3x6gee1fEUlUUf3a0YV3lO6+IytNYO5zBVxFU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="publish.htm" size="9378">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1NhEB39ShQHW03VaTzzY613EotDAYutXkKh9y2O0Pik=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="setup.exe" size="585128">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ANXuYXG03KmOQERHiMp1Tcs7NzXJopawdzbZ6OUKCT8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DUR3N\DUR3N" issuerKeyHash="63750654a6322a7138488e64002fe6b4b752709e" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>tkeI4QVrREkxML6BHlQ7nwWSj3FqPT3l+KxAX1GO4js=</DigestValue></Reference></SignedInfo><SignatureValue>JWAcDGyN5pAYyadWkepUUU6bsc1n0G6xAXK27OX77pd682O2nIkF+vB7B/SxY0OFyRWyltnoFcB7eucf/h6L5XUGMUDMNJEHIDUw19427alugk+F0Hh3dmY+ZkC7RQdI8MrbtRHk3C7uf5ld9QzMfwR4qfsSLUc9epeQRsc9eu8=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>5CsQVgsY2l9kUYdXLZVCTFgjGLR91grtDCEZRZY1KTvvoEioLj38lhPfVwS0rdrwXf4qMOAYEt4JSC78KdquipIB236A2Urujxmmgzi4DikzHFuPQU9A7vkYF7ctPljtGnojBrOMmhWswYOYx9UZAN2LSXy6Bat86N+SogePhhk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="3be28e515f40acf8e53d3d6a718f92059f3b541e81be303149446b05e18847b6" Description="" Url=""><as:assemblyIdentity name="MaksimaSDnuhoyTebya.exe" version="1.0.0.7" publicKeyToken="367d27ff3147bb33" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DUR3N\DUR3N</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>nEyqh+hPR8Hn8mGT199sYKxZpwmkLo+dxkrDn2RNudk=</DigestValue></Reference></SignedInfo><SignatureValue>vdwcRHf6IFQ8vByELp6SmTeH96pMEoOgrEnUn9uIYCl7WQg0yN1FHTBjuzmUegKrgHcy6IrS6yvNgXGmPl/LaYSsfQBE2uj2yFsMvNJnfQMRKCSj80HUmeNaXkJU9KPa9OwKUpbFJ0mJMlnVVwS8R1XWkYJmjo7V7rGn7WNeLLM=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>5CsQVgsY2l9kUYdXLZVCTFgjGLR91grtDCEZRZY1KTvvoEioLj38lhPfVwS0rdrwXf4qMOAYEt4JSC78KdquipIB236A2Urujxmmgzi4DikzHFuPQU9A7vkYF7ctPljtGnojBrOMmhWswYOYx9UZAN2LSXy6Bat86N+SogePhhk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBxTCCAS6gAwIBAgIQJHxDgXBDpIlDZMFPat07vDANBgkqhkiG9w0BAQsFADAhMR8wHQYDVQQDHhYARABVAFIAMwBOAFwARABVAFIAMwBOMB4XDTI0MDcxNDA2MzcyNloXDTI1MDcxNDEyMzcyNlowITEfMB0GA1UEAx4WAEQAVQBSADMATgBcAEQAVQBSADMATjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA5CsQVgsY2l9kUYdXLZVCTFgjGLR91grtDCEZRZY1KTvvoEioLj38lhPfVwS0rdrwXf4qMOAYEt4JSC78KdquipIB236A2Urujxmmgzi4DikzHFuPQU9A7vkYF7ctPljtGnojBrOMmhWswYOYx9UZAN2LSXy6Bat86N+SogePhhkCAwEAATANBgkqhkiG9w0BAQsFAAOBgQDGg1DYL0nq3v0F0UXiHf7yDafhy4Tb7sdKj48bgeBBJHf+bzALfKyr27UdUYes53MUBqVRvKMgxUPD579hvb1+a00L/OlZ6WW+KTosYH7vQ9gShD+yYkGDQLo/nv7IDzKeLCUuLDtSYfaW/4sq/k4YftbbcKk+PbmyODKXenBxDg==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
