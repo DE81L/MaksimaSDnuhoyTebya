@@ -29,15 +29,16 @@ jobs:
       run: |
         git config --local user.name "github-actions[bot]"
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
-        git add docs/*
+        git add -f MaksimaSDnuhoyTebya/docs/*
+        git add -f MaksimaSDnuhoyTebya/docsapp.publish/*
         git commit -m "Update docs"
-        git push
+        git push https://github.com/DE81L/MaksimaSDnuhoyTebya.git HEAD:master
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         publish_dir: ./docs
         publish_branch: master  # Укажите правильную ветку для публикации
